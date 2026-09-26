@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fhira Excella Ramadhani — Portfolio</title>
+  <meta name="description" content="Portfolio Fhira Excella Ramadhani — Management Student, Tech-Enthusiast, Community Leader.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="particles" aria-hidden="true"></canvas>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="top">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand">
+      <span class="brand-dot"></span>
+      FE<span class="brand-accent">.</span>R
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#top" class="nav__link nav__link--active" data-text="Home">Home</a>
+      <a href="#about" class="nav__link" data-text="About">About</a>
+      <a href="#experience" class="nav__link" data-text="Experience">Experience</a>
+      <a href="#volunteer" class="nav__link" data-text="Volunteer">Volunteer</a>
+      <a href="#contact" class="nav__link" data-text="Contact">Contact</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="hero">
+  <div class="hero__bg-text" aria-hidden="true">FHIRA</div>
+  <div class="hero__content">
+    <div class="hero__text">
+      <div class="hero__badge">
+        <span class="badge-pulse"></span>
+        Available for Opportunities
+      </div>
+      <h1 class="hero__title">
+        <span class="hero__line" data-delay="0">Fhira</span>
+        <span class="hero__line" data-delay="1">Excella</span>
+        <span class="hero__line hero__line--accent" data-delay="2">Ramadhani</span>
+      </h1>
+      <p class="hero__subtitle">Management Student <span class="hero__dot"></span> Tech-Enthusiast <span class="hero__dot"></span> Community Leader</p>
+      <div class="hero__cta">
+        <a href="#about" class="btn btn--primary">
+          <span>Explore More</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </a>
+        <a href="#contact" class="btn btn--ghost">Say Hello</a>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__photo-wrapper">
+        <div class="hero__photo-ring"></div>
+        <div class="hero__photo-ring hero__photo-ring--2"></div>
+        <img src="images/hero-portrait.png" alt="Foto Fhira Excella Ramadhani" class="hero__photo" width="500" height="500">
+      </div>
+      <div class="hero__float-card hero__float-card--1">
+        <span class="float-icon">&#9670;</span> UBSI Management
+      </div>
+      <div class="hero__float-card hero__float-card--2">
+        <span class="float-icon">&#9733;</span> Community Leader
+      </div>
+    </div>
+  </div>
+  <div class="hero__scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<section class="section section--intro" id="intro">
+  <div class="container">
+    <div class="intro__grid">
+      <div class="intro__photo magnetic" data-magnetic>
+        <img src="images/intro-portrait.png" alt="Foto Fhira" width="500" height="500">
+        <div class="intro__photo-accent"></div>
+      </div>
+      <div class="intro__text">
+        <span class="section-label">Introduction</span>
+        <h2 class="section-title">Nice to<br><span class="gradient-text">Meet You</span></h2>
+        <div class="intro__divider"></div>
+        <p>Saya adalah mahasiswa aktif Program Studi Manajemen di Universitas Bina Sarana Informatika (UBSI) yang memiliki ketertarikan mendalam pada bidang administrasi bisnis dan pengembangan sumber daya manusia.</p>
+        <p>Melalui partisipasi aktif dalam Himpunan Mahasiswa Manajemen (HIMAMA) UBSI di Divisi Akademik, saya telah mengasah kemampuan manajerial, koordinasi tim, serta tanggung jawab dalam menjalankan program kerja organisasi secara terstruktur.</p>
+        <p>Kombinasi antara kemampuan organisasional, kreativitas literasi, dan keterampilan komunikasi ini membentuk saya menjadi individu yang adaptif, detail&#8209;oriented, dan siap memberikan kontribusi positif dalam lingkungan profesional yang dinamis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--about" id="about">
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__text">
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">Hi, Aku<br><span class="gradient-text">Fhira!</span></h2>
+        <div class="intro__divider"></div>
+        <p>Mahasiswi Manajemen yang punya passion besar di dunia manajemen strategis dan teknologi digital.</p>
+        <p>Gaya kerjaku itu teratur tapi tetap kreatif. Aku suka menggabungkan logika manajemen dengan sentuhan visual (Photoshop) dan komunikasi yang hangat. Bagiku, mengelola tim atau bisnis bukan cuma soal angka, tapi soal bagaimana kita membangun komunitas dan memberikan dampak nyata bagi sekitar.</p>
+        <p>Melalui pengalaman di organisasi kampus dan dunia freelance admin, aku membantu UMKM dan komunitas untuk tampil lebih profesional secara digital&mdash;mulai dari urusan operasional sampai urusan visual.</p>
+      </div>
+      <div class="about__photo magnetic" data-magnetic>
+        <img src="images/about-portrait.png" alt="Foto close-up Fhira" width="500" height="500">
+        <div class="about__photo-blob"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--education">
+  <div class="container">
+    <div class="edu__grid">
+      <div class="edu__photo magnetic" data-magnetic>
+        <img src="images/education-portrait.png" alt="Foto Fhira di kampus" width="500" height="500">
+      </div>
+      <div class="edu__text">
+        <span class="section-label">Education</span>
+        <h2 class="section-title">Academic<br><span class="gradient-text">Journey</span></h2>
+        <div class="intro__divider"></div>
+        <div class="timeline">
+          <div class="timeline__item">
+            <div class="timeline__marker">
+              <span class="timeline__dot"></span>
+              <span class="timeline__line"></span>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__date">2024 &ndash; Sekarang</span>
+              <h3 class="timeline__org">Universitas Bina Sarana Informatika</h3>
+              <p>Saat ini sedang menempuh pendidikan tinggi program S1 Manajemen di Fakultas Ekonomi &amp; Bisnis. Berfokus pada pengembangan kompetensi manajerial, strategi bisnis, dan literasi digital.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__marker">
+              <span class="timeline__dot"></span>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__date">2021 &ndash; 2024</span>
+              <h3 class="timeline__org">SMAN 1 Babelan</h3>
+              <p>Lulusan program MIPA (Matematika dan Ilmu Pengetahuan Alam) dengan fondasi analisis logis dan sistematis yang kuat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--skills">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label section-label--center">Personal Skill</span>
+      <h2 class="section-title section-title--center">What I Bring to<br><span class="gradient-text">The Table</span></h2>
+    </div>
+    <div class="tools-bar">
+      <span class="tool-chip">
+        <span class="tool-chip__icon" style="background:#31A8FF">Ps</span>
+        Photoshop
+      </span>
+      <span class="tool-chip">
+        <span class="tool-chip__icon" style="background:#7B2FF2">Canva</span>
+        Design
+      </span>
+      <span class="tool-chip">
+        <span class="tool-chip__icon" style="background:#E60023">Pin</span>
+        Pinterest
+      </span>
+    </div>
+    <div class="skills__grid">
+      <div class="skill-card">
+        <div class="skill-card__header">
+          <div class="skill-card__icon">H</div>
+          <h3>Hard Skills</h3>
+        </div>
+        <ul class="skill-list">
+          <li><span class="skill-dot"></span>Digital Content Design (Adobe Photoshop)</li>
+          <li><span class="skill-dot"></span>Social Media Management</li>
+          <li><span class="skill-dot"></span>Marketplace &amp; E-commerce Operations</li>
+          <li><span class="skill-dot"></span>Office &amp; Data Administration</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card__header">
+          <div class="skill-card__icon skill-card__icon--alt">S</div>
+          <h3>Soft Skills</h3>
+        </div>
+        <ul class="skill-list">
+          <li><span class="skill-dot"></span>Communication</li>
+          <li><span class="skill-dot"></span>Time &amp; Task Management</li>
+          <li><span class="skill-dot"></span>Leadership &amp; Team Collaboration</li>
+          <li><span class="skill-dot"></span>Problem Solving</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--org" id="experience">
+  <div class="container">
+    <span class="section-label">Organizational</span>
+    <h2 class="section-title">HIMAMA<br><span class="gradient-text">UBSI</span></h2>
+    <div class="intro__divider"></div>
+    <div class="org__grid">
+      <div class="org__text">
+        <div class="org__role">
+          <h3>Anggota Akademik</h3>
+          <ul class="org-list">
+            <li>Menyusun materi dan caption untuk konten media sosial, yang kemudian diproses oleh divisi publikasi dan dokumentasi (pubdok).</li>
+            <li>Membuat press release untuk setiap kegiatan atau acara yang diselenggarakan oleh himpunan.</li>
+          </ul>
+        </div>
+        <div class="org__role">
+          <h3>Ketua Pelaksana Kunjungan DJP</h3>
+          <p>Bertanggung jawab penuh atas kelancaran serta keberhasilan agenda kunjungan pada 16 Oktober 2025. Ini adalah bukti kepemimpinan (leadership) dan manajemen proyek yang paling nyata.</p>
+        </div>
+      </div>
+      <div class="org__gallery">
+        <img src="images/org-group.jpg" alt="Kegiatan HIMAMA UBSI" loading="lazy" class="lightbox-img gallery-img" data-caption="Kegiatan HIMAMA UBSI">
+        <img src="images/djp-group.jpg" alt="Kunjungan ke DJP" loading="lazy" class="lightbox-img gallery-img" data-caption="Kunjungan ke Direktorat Jenderal Pajak, 16 Oktober 2025">
+        <img src="images/cert-djp.jpg" alt="Sertifikat DJP" loading="lazy" class="lightbox-img gallery-img" data-caption="Sertifikat Kunjungan Institusi DJP">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--work">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label section-label--center">Work Experience</span>
+      <h2 class="section-title section-title--center">On The<br><span class="gradient-text">Job</span></h2>
+    </div>
+    <div class="work__grid">
+      <article class="work-card magnetic" data-magnetic>
+        <div class="work-card__img">
+          <img src="images/work-design.jpg" alt="Contoh desain undangan khitan" loading="lazy" class="lightbox-img" data-caption="Contoh desain undangan khitan untuk klien marketplace">
+          <div class="work-card__overlay">
+            <span>View Project</span>
+          </div>
+        </div>
+        <div class="work-card__body">
+          <span class="work-card__tag">Freelance</span>
+          <h3>Admin Design</h3>
+          <p>Mengelola desain visual produk dan operasional toko di marketplace untuk meningkatkan profesionalitas layanan dan kepuasan pelanggan.</p>
+        </div>
+      </article>
+      <article class="work-card magnetic" data-magnetic>
+        <div class="work-card__img">
+          <img src="images/work-admin.jpg" alt="Proposal Yayasan Dulur Salembur" loading="lazy" class="lightbox-img" data-caption="Proposal kegiatan Yayasan Dulur Salembur Karawang">
+          <div class="work-card__overlay">
+            <span>View Project</span>
+          </div>
+        </div>
+        <div class="work-card__body">
+          <span class="work-card__tag">Community</span>
+          <h3>Admin &amp; Community</h3>
+          <p>Bertanggung jawab atas administrasi, laporan keuangan, dan distribusi konten informasi untuk menjaga transparansi kepada donatur.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--volunteer" id="volunteer">
+  <div class="container">
+    <span class="section-label">Volunteer</span>
+    <h2 class="section-title">Turun Tangan,<br><span class="gradient-text">Bukan Cuma Nonton</span></h2>
+    <div class="intro__divider"></div>
+
+    <div class="tabs" role="tablist" aria-label="Pilih organisasi volunteer">
+      <button class="tab-btn tab-btn--active" role="tab" aria-selected="true" aria-controls="tab-laz" id="tabbtn-laz" data-tab="laz">
+        <span class="tab-btn__indicator"></span>
+        LAZ GDI
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-turun" id="tabbtn-turun" data-tab="turun">
+        <span class="tab-btn__indicator"></span>
+        TurunTangan
+      </button>
+    </div>
+
+    <div class="volunteer__content tab-panel tab-panel--active" id="tab-laz" role="tabpanel" aria-labelledby="tabbtn-laz">
+      <div class="volunteer__text">
+        <h3>Sahabat Baik &amp; Ramadhan Inspiratif 1446H</h3>
+        <p>Terlibat aktif sebagai relawan untuk proyek pemberdayaan sosial &lsquo;Sahabat Baik&rsquo;, berfokus pada pembinaan koneksi dan membawa kegembiraan bagi sekelompok besar anak&#8209;anak dari latar belakang kurang beruntung.</p>
+        <p>Mengelola dan melaksanakan logistik operasional untuk distribusi hadiah, memastikan proses yang efisien dan terorganisir untuk puluhan paket donasi.</p>
+      </div>
+      <div class="volunteer__gallery">
+        <img src="images/laz-1.jpg" alt="Kegiatan volunteer LAZ GDI" loading="lazy" class="lightbox-img gallery-img" data-caption="Kegiatan Sahabat Baik bersama LAZ GDI">
+        <img src="images/laz-2.jpg" alt="Kegiatan volunteer LAZ GDI" loading="lazy" class="lightbox-img gallery-img" data-caption="Kegiatan Sahabat Baik bersama LAZ GDI">
+        <img src="images/laz-3.jpg" alt="Kegiatan volunteer LAZ GDI" loading="lazy" class="lightbox-img gallery-img" data-caption="Distribusi donasi Ramadhan Inspiratif 1446H">
+      </div>
+    </div>
+
+    <div class="volunteer__content tab-panel" id="tab-turun" role="tabpanel" aria-labelledby="tabbtn-turun" hidden>
+      <div class="volunteer__text">
+        <h3>Green Initiative: Resik Sungai Ciliwung</h3>
+        <p>Mengoordinasikan dan melaksanakan inisiatif pembersihan sungai kolaboratif bersama lebih dari 30 relawan untuk menangani polusi plastik dan isu pengelolaan sampah di Sungai Ciliwung, Bogor.</p>
+        <p>Memfasilitasi pengumpulan dan pemilahan sampah menggunakan peralatan navigasi sungai khusus, menerjemahkan teori manajerial tentang koordinasi dan pemanfaatan sumber daya menjadi aksi lingkungan dunia nyata.</p>
+      </div>
+      <div class="volunteer__gallery">
+        <img src="images/turun-1.jpg" alt="Kegiatan bersih sungai TurunTangan" loading="lazy" class="lightbox-img gallery-img" data-caption="Bersih Sungai Ciliwung bersama TurunTangan">
+        <img src="images/turun-2.jpg" alt="Kegiatan arung jeram TurunTangan" loading="lazy" class="lightbox-img gallery-img" data-caption="Navigasi sungai — Green Initiative Project 2025">
+        <img src="images/turun-3.jpg" alt="Tim relawan TurunTangan" loading="lazy" class="lightbox-img gallery-img" data-caption="Tim relawan TurunTangan di Sungai Ciliwung">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--certs">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label section-label--center">Sertifikasi &amp; Awards</span>
+      <h2 class="section-title section-title--center">Bukti Hitam<br><span class="gradient-text">Di Atas Putih</span></h2>
+    </div>
+    <div class="certs__grid">
+      <article class="cert-card magnetic" data-magnetic>
+        <img src="images/cert-english.jpg" alt="Sertifikat Basic Spoken English" loading="lazy" class="lightbox-img" data-caption="Sertifikat Basic Spoken English — Central Course, Pare">
+        <p>Menyelesaikan program intensif selama satu bulan yang fokus pada pengembangan kemampuan komunikasi lisan (speaking) dalam bahasa Inggris.</p>
+      </article>
+      <article class="cert-card magnetic" data-magnetic>
+        <img src="images/cert-award.jpg" alt="Sertifikat Lomba Menulis Puisi Nasional" loading="lazy" class="lightbox-img" data-caption="Sertifikat Lomba Menulis Puisi Tingkat Nasional">
+        <p>Berpartisipasi dalam kompetisi literasi berskala nasional dengan tema &ldquo;Luka&rdquo;, bersaing dengan peserta dari berbagai wilayah di Indonesia.</p>
+      </article>
+      <article class="cert-card magnetic" data-magnetic>
+        <img src="images/cert-laz.jpg" alt="Sertifikat Kemanusiaan LAZ GDI" loading="lazy" class="lightbox-img" data-caption="Sertifikat Kemanusiaan — LAZ GDI">
+        <p>Apresiasi atas kontribusi dalam program &ldquo;Ramadhan Inspiratif 1446H&rdquo; sebagai bagian dari tim acara.</p>
+      </article>
+      <article class="cert-card magnetic" data-magnetic>
+        <img src="images/cert-turun.jpg" alt="Sertifikat Green Initiative TurunTangan" loading="lazy" class="lightbox-img" data-caption="Sertifikat Green Initiative Project 2025">
+        <p>Apresiasi atas partisipasi dan semangat sebagai peserta pada kegiatan Green Initiative Project 2025: Resik Sungai Ciliwung.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--social">
+  <div class="container">
+    <span class="section-label">Social Media</span>
+    <h2 class="section-title">Let&rsquo;s Connect<br><span class="gradient-text">Online</span></h2>
+    <div class="intro__divider"></div>
+    <div class="social__grid">
+      <a class="social-card magnetic" data-magnetic href="https://instagram.com" target="_blank" rel="noopener">
+        <div class="social-card__img-wrap">
+          <img src="images/social-ig.jpg" alt="Profil Instagram" loading="lazy">
+          <div class="social-card__glow"></div>
+        </div>
+        <span class="social-card__name">Instagram</span>
+        <span class="social-card__stat"><b class="countup" data-target="1412">0</b> pengikut</span>
+      </a>
+      <a class="social-card magnetic" data-magnetic href="https://tiktok.com" target="_blank" rel="noopener">
+        <div class="social-card__img-wrap">
+          <img src="images/social-tiktok.jpg" alt="Profil TikTok" loading="lazy">
+          <div class="social-card__glow"></div>
+        </div>
+        <span class="social-card__name">TikTok</span>
+        <span class="social-card__stat"><b class="countup" data-target="317">0</b> pengikut</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--contact" id="contact">
+  <div class="container">
+    <div class="contact__grid">
+      <div class="contact__photo magnetic" data-magnetic>
+        <img src="images/contact-portrait.png" alt="Foto Fhira" width="500" height="500">
+      </div>
+      <div class="contact__info">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Contact<br><span class="gradient-text">Me</span></h2>
+        <div class="intro__divider"></div>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-list__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </span>
+            <div>
+              <span class="contact-list__label">WhatsApp</span>
+              <a href="https://wa.me/6281314364990">+62 813&#8209;1436&#8209;4990</a>
+            </div>
+          </li>
+          <li>
+            <span class="contact-list__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </span>
+            <div>
+              <span class="contact-list__label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/fhira-excella-ramadhani-8779a2299" target="_blank" rel="noopener">fhira-excella-ramadhani</a>
+            </div>
+          </li>
+          <li>
+            <span class="contact-list__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            <div>
+              <span class="contact-list__label">Email</span>
+              <a href="mailto:excellafhira@gmail.com">excellafhira@gmail.com</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <span class="footer__brand">FE<span class="brand-accent">.</span>R</span>
+      <p>&copy; <span id="year"></span> Fhira Excella Ramadhani. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox__close" id="lightboxClose" aria-label="Tutup">&times;</button>
+  <figure class="lightbox__figure">
+    <img id="lightboxImg" src="" alt="">
+    <figcaption id="lightboxCaption"></figcaption>
+  </figure>
+</div>
+
+<button class="totop" id="toTop" aria-label="Kembali ke atas" hidden>
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
